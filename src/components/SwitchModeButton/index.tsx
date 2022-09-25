@@ -10,7 +10,7 @@ const SwitchModeButton = () => {
   const colorMode = React.useContext(ThemeContext);
 
   return (
-    <Box>
+    <Box display={'flex'} alignItems={'center'}>
       <IconButton onClick={colorMode.toggleColorMode} color='inherit'>
         {theme.palette.mode === 'dark' ? <LightIcon /> : <DarkIcon />}
       </IconButton>
